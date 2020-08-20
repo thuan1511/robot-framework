@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200820 22:36:19.612" generator="Robot 3.2.1 (Python 2.7.18 on darwin)">
+<suite source="/Users/jimbi/Desktop/robot-framework/testcases/Login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Click and Check button Cancel">
+<kw name="Check Click Button" library="homepage">
+<kw name="Wait and Click Element" library="common_keywords">
+<arguments>
+<arg>${BTN_CANCELED_KM}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>10</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200820 22:36:19.724" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200820 22:36:19.724" starttime="20200820 22:36:19.724"></status>
+</kw>
+<msg timestamp="20200820 22:36:19.725" level="FAIL">No browser is open.</msg>
+<status status="FAIL" endtime="20200820 22:36:19.725" starttime="20200820 22:36:19.724"></status>
+</kw>
+<status status="FAIL" endtime="20200820 22:36:19.725" starttime="20200820 22:36:19.723"></status>
+</kw>
+<status status="FAIL" endtime="20200820 22:36:19.725" starttime="20200820 22:36:19.723"></status>
+</kw>
+<status status="FAIL" endtime="20200820 22:36:19.725" critical="yes" starttime="20200820 22:36:19.723">No browser is open.</status>
+</test>
+<status status="FAIL" endtime="20200820 22:36:19.726" starttime="20200820 22:36:19.614"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Login" pass="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
