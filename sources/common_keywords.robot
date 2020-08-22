@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary
 
 
 *** Keywords ***
@@ -12,3 +12,8 @@ Wait and Click Element
     [Arguments]     ${locator}
     Wait Until Element Is Visible   ${locator}      10
     Click Button    ${locator}
+
+Check Element Is Visible
+    [Arguments]     ${locator}
+    Wait Until Element Is Visible   ${locator}      10
+    Element Should Be Visible    ${locator}    10
