@@ -10,3 +10,4 @@ TC-001: Open and Login Web
     Verify Login Successfully
 TC-002: Check Deposit Success
     Switch page deposit
+    

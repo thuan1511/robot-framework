@@ -1,5 +1,5 @@
 *** Settings ***
-Library  SeleniumLibrary
+Library  Selenium2Library
 Resource    ../../sources/common_keywords.robot
 
 *** Variables ***
@@ -11,6 +11,9 @@ ${USER_NAME}            //*[@id="header"]//form//input[@type='text']
 ${PASS_WORD}            //*[@id="header"]//form//input[@type='password']
 ${BTN_LOGIN}            //*[@id="header"]//form//button[@type='submit' and text()[normalize-space() = 'Đăng nhập']]
 ${BTN_NAPTIEN}          //*[@id="header"]//div[@class='header__wrap-action']//a[text()[normalize-space()='Nạp tiền']]
+${BANK_BASIC}           //*[@id="bank-tab"]
+${SELECT_BANK}          //*[@id="rechargeCommonBankList"]
+
 
 *** Keywords ***
 Open Browser With Chrome
